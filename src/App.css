@@ -1,0 +1,60 @@
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  /* position: relative; */
+  width: 30%;
+  margin: 0 30px;
+  height: 250px;
+  background-color: lightgrey;
+}
+
+/* Float four columns side by side */
+.column {
+  background-color: white;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 120px;
+}
+
+/* Style the counter cards */
+.card {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-style: groove;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.child-card{
+  width: 51px;
+  text-align: center;
+}
+
+.block{
+  font-size: 40px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  color: chocolate;
+}
+
+.plus_button{
+  float: right;
+  background: none;
+  border-left: 1px solid chocolate;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.minus_button{
+  float: left;
+  background: none;
+  border-right: 1px solid chocolate;
+  border-radius: 12px 0px 0px 12px;
+}
+
